@@ -1,0 +1,165 @@
+#oslivechat
+{
+	position:absolute;
+	z-index:99999;	/* Crazy value so it's always on top */
+	bottom:0px;
+	right:10px;
+	width:250px;
+	font-family:Arial;
+}
+#oslivechat.open div.top, #oslivechat.open #chatscreen
+{
+	box-shadow: 0px 0px 5px #666;
+}
+#oslivechat div.top
+{
+	background-color:#c0d9ff;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	padding:7px;
+	font-size:11px;
+	background: #1e5799; /* Old browsers */
+	background: -moz-linear-gradient(top,  #1e5799 0%, #2989d8 50%, #207cca 51%, #7db9e8 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#1e5799), color-stop(50%,#2989d8), color-stop(51%,#207cca), color-stop(100%,#7db9e8)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #1e5799 0%,#2989d8 50%,#207cca 51%,#7db9e8 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=0 ); /* IE6-9 */
+	color:#fff;
+	cursor: pointer;
+}
+#oslivechat div.top:hover
+{
+	background-color:#91bdff;
+}
+#oslivechat.open
+{
+	/*height:250px;*/
+}
+#oslivechat #chatscreen
+{
+	background-color: #edf4ff;
+	height:300px;
+	display:none;
+	overflow:scroll;
+}
+#oslivechat div.top span
+{
+
+	float:left;
+}
+#oslivechat #chatscreen input
+{
+	width:100%;
+	border:1px solid #569aff;
+	position:absolute;
+	bottom:0px;
+	padding:7px;
+	font-size:12px;
+}
+#expand
+{
+	float:right;
+	padding-right:7px;
+	font-size:14px;
+	font-weight:bold;
+}
+.clear 
+{
+	clear:both;
+}
+#resultbox
+{
+	padding:7px;
+	font-size:12px;
+	line-height:1.1;
+	height:260px;
+	overflow-y:hidden;
+}
+#resultbox p
+{
+	padding:0px;
+	margin:0xp;
+}
+#resultbox p span
+{
+	color:#555;
+}
+#sendbutton
+{
+	width:27px;
+	padding-left:3px;
+	height:22px;
+	padding-top:8px;
+	background-color:#569aff;
+	color:#fff;
+	display:block;
+	font-size:10px;
+	position:absolute;
+	bottom:2px;
+	right:0px;
+	text-decoration: none;
+}
+#tmpwait
+{
+	border-radius: 5px;
+	background-color:#569aff;
+	color:#fff;
+	font-size:13px;
+	padding:10px;
+	margin:10px;
+	text-align:center;
+	position:absolute;
+	top:90px;
+	box-shadow: 0px 0px 5px #666;
+	overflow-x:hidden;
+	background: #569aff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #569aff 0%, #4096ee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#569aff), color-stop(100%,#4096ee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #569aff 0%,#4096ee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #569aff 0%,#4096ee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #569aff 0%,#4096ee 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #569aff 0%,#4096ee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#569aff', endColorstr='#4096ee',GradientType=0 ); /* IE6-9 */
+}
+.inlinebuttons
+{
+	clear:both;
+	display:block;
+	width:150px;
+	padding-top:10px;
+}
+.inlinebutton
+{
+	width:50px !important;
+	background-color:#569aff !important;
+	color:#fff;
+	float:left !important;
+	display:block !important;
+	padding:5px !important;
+	font-size:11px !important;
+	margin-left:10px;
+	cursor: pointer;
+	border:1px solid #569aff;
+}
+.inlinebutton:hover
+{
+	border:1px solid #fff;
+}
+/* A class used by the jQuery UI CSS framework for their dialogs. */
+.ui-front {
+    z-index:1000000 !important; /* The default is 100. !important overrides the default. */
+    font-size: 80% !important;
+}
+.ui-front label, input { display:block; }
+.ui-front input.text { margin-bottom:12px; width:95%; padding: .4em; }
+.ui-front fieldset { padding:0; border:0; margin-top:10px; }
+#tmpwait #cancel
+{
+	float:right;font-size:9px;padding:5px;cursor:pointer;
+}
+#tmpwait #cancel:hover
+{
+	text-decoration: underline;
+}
